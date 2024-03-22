@@ -1,0 +1,996 @@
+GET / HTTP/1.1
+Host: www.wireshark.org
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/20100101 Firefox/16.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cookie: __rb_webperf=3351f3a6
+
+HTTP/1.1 200 OK
+Server: Apache/2
+Vary: Accept-Encoding
+X-Slogan: It's a great product with a great story to tell. I'm pumped!
+Cache-Control: no-cache
+Content-Type: text/html
+Date: Sat, 20 Oct 2012 23:37:20 GMT
+Keep-Alive: timeout=5, max=65
+Transfer-Encoding: chunked
+ETag: "240b17-40ad-4cb18943247f3"
+Connection: Keep-Alive
+Set-Cookie: __rb_webperf=29e289f6; domain=wireshark.org; path=/
+Last-Modified: Tue, 02 Oct 2012 19:32:12 GMT
+
+1434
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head><script> var EPISODES = EPISODES || {};EPISODES.q = [];EPISODES.marks = {};EPISODES.newcookieVal = "29e289f6"; EPISODES.oldcookieVal = "3351f3a6"; EPISODES.beaconUrl = "http://www.wireshark.org:61899/beacon/1x1.gif"; EPISODES.mark = function(mn, mt) { EPISODES.marks[mn] = mt || new Date().getTime()};EPISODES.measure = function(en, st, en) { EPISODES.q.push( ["measure", en, st, en || new Date().getTime()] ); };EPISODES.mark("firstbyte");EPISODES.domContentLoaded = function(e) {   EPISODES.mark("domcontentloaded");};if ( "undefined" != typeof(window.attachEvent) ) {     window.attachEvent("onDOMContentLoaded", EPISODES.domContentLoaded);   }else if ( window.addEventListener ){     window.addEventListener("DOMContentLoaded", EPISODES.domContentLoaded, false);   }(function() {                 var epjs = document.createElement("script"); epjs.type = "text/javascript"; epjs.async = true;                 epjs.src = "http://dmru24w46caus.cloudfront.net/episodes.v0.32.min.js";    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(epjs, s);})();</script>
+  <title>Wireshark &middot; Go deep.</title>
+  <link rel="dns-prefetch" href="//ws.cf.wireshark.net">
+  <link rel="dns-prefetch" href="//www.google.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//ipv4.wireshark.org">
+  <link rel="dns-prefetch" href="//ipv6.wireshark.org">
+  <link type="text/css" rel="Stylesheet" href="/css/ws-2011-10.css" title="screen" media="screen">
+  <link rel="alternate" type="application/rss+xml" href="http://www.wireshark.org/news.rss" title="Wireshark News">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="/webtuna.js"></script>
+</head>
+<body>
+<!-- MAIN BODY -->
+<div id="wrapper">
+  <div id="header">
+    <div class="row one">
+      <div
+        class="v46status"
+        onclick="location.href='http://www.wireshark.org/tools/v46status.html';"
+        style="cursor: pointer;"></div>
+      <h1 id="logotype"><a href="/" title="Wireshark Home&#x2026;">Wireshark</a></h1>
+      <ul class="navigation horizontal secondary">
+        <li id="navRiverbed"><a href="http://www.riverbed.com/" title="Riverbed Technology Web Site"><span class="hidden">Riverbed Technology</span></a></li>
+        <li id="navWinPcap"><a href="http://www.winpcap.org/" title="WinPcap Web Site"><span class="hidden">WinPcap</span></a></li>
+      </ul>
+<div id="slogan">the world's foremost network protocol analyzer</div>
+    </div>
+<script type="text/javascript" src="/js/jq1.3.2+sf+hi.js"></script>
+    <div class="row two">
+      <!-- NAV -->
+      <ul id="nav" class="navigation horizontal primary sf-menu sf-js-enabled sf-shadow">
+        <li class="item navWireshark"><a class="firstLevel" name="wireshark_menu" href="/"><span>Wireshark</span></a>
+          <ul class="dropdown">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/download.html">Download</a></li>
+            <li><a href="https://blog.wireshark.org/">Blog</a></li>
+          </ul>
+        </li>
+        <li class="item navLearn"><a class="firstLevel" name="help_menu" href="/docs/"><span>Get Help</span></a>
+          <ul>
+            <li><a href="http://ask.wireshark.org/">Ask a Question</a></li>
+            <li><a href="/faq.html">FAQs</a></li>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/lists/">Mailing Lists</a></li>
+            <li><a href="/tools/">Online Tools</a></li>
+            <li><a href="http://wiki.wireshark.org/">Wiki</a></li>
+            <li><a href="https://bugs.wireshark.org/">Bug Tracker</a></li>
+          </ul>
+        </li>
+        <li class="item last navDevelop"><a class="firstLevel" name="develop_menu" href="/develop.html"><span>Develop</span></a>
+          <ul>
+            <li><a href="/develop.html">Get Involved</a></li>
+            <li><a href="/docs/wsdg_html_chunked">Developer's Guide</a></li>
+            <li><a href="http://anonsvn.wireshark.org/viewvc/viewvc.cgi">Browse the Code</a></li>
+            <li><a href="/download/automated">Latest Builds</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- NAV ENDS -->
+      <div id="searchbox">
+<!-- Search box -->
+<div id="searchBar">
+  <form action="http://www.google.com/cse" id="cse-search-box">
+    <div>
+      <input type="hidden" name="cx" value="partner-pub-8797272874272241:rr0bun-xdwz">
+      <input type="hidden" name="ie" value="UTF-8">
+      <input type="text" class="textbox" name="q" size="25">
+      <input type="submit" class="button submit likeimage" name="sa" value="Search">
+    </div>
+  </form>
+</div>
+<!-- Search box ends -->
+      </div>
+      <div id="shareNice" icon-size="16"></div>
+    </div>
+    <!-- NAV ENDS -->
+  </div>
+<ul class="navigation horizontal icon">
+  <li class="begin"></li>
+  <li class="item navDownload">
+    <a href="/download.html" title="Download Wireshark...">
+      <span class="i"><span class="hidden">Download Wireshark</span></span>
+
+2000
+      <span class="t">Get Started Now</span>
+    </a>
+  </li>
+  <li class="item navLearn">
+    <a href="/docs/" title="Learn Wireshark...">
+      <span class="i"><span class="hidden">Learn Wireshark</span></span>
+      <span class="t">Resources and Documentation</span>
+    </a>
+  </li>
+  <li class="item navEnhance">
+    <a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/" title="Enhance Wireshark...">
+      <span class="i"><span class="hidden">Enhance Wireshark</span></span>
+      <span class="t">Riverbed Technology</span>
+    </a>
+  </li>
+  <li class="end"></li>
+</ul>
+<div id="main">
+  <div class="cols thirds">
+    <div class="col">
+      <div class="module newsAndEvents">
+        <div class="heading"><span>News And Events</span><a class="rss" href="http://www.wireshark.org/news.rss" title="RSS..."><span>RSS</span></a></div>
+        <div class="content">
+          <h3 class="title">Laura's Book Updated!</h3>
+          <p>
+Laura Chappel has released the second edition of <a
+href="http://wiresharkbook.com/">Wireshark Network Analysis</a>, the official
+Wireshark Certified Network Analyst study guide. This edition covers new
+features in Wireshark 1.8 including pcap-ng and annotations. A Kindle edition is
+now available!
+<br>
+<a href="http://wiresharkbook.com/files/whatsnew-2nd.pdf">Learn more</a>
+<br>
+<a href="http://wiresharkbook.com/">Get your copy now</a>
+          </p>
+          <h3 class="title">Free Wireshark Training</h3>
+          <p>
+Laura Chappell delivers free, live training webinars to bring you quickly up to
+speed with Wireshark.
+          </p>
+          <p>
+<a href="http://chappellu.com/schedule.html">Register today!</a>
+          </p>
+          <p>
+Or, take the Wireshark 101 course any time and any place.
+<a href="https://www.lcuportal2.com/index.php?option=com_content&view=category&layout=blog&id=49&Itemid=75.">Watch the video training online</a>
+or
+<a href="https://www.lcuportal2.com/index.php?option=com_content&view=category&layout=blog&id=49&Itemid=75.">download the course videos</a>
+and train on your own time.
+          </p>
+<!--
+          <h3 class="title"><a href="http://sectools.org" title="">#1 on SecTools.Org</a></h3>
+          <p class="postinfo">November 7, 2011</p>
+          <p>
+Fyodor (of <a href="http://www.insecure.org/">Nmap</a> fame)
+recently revamped <a href="http://sectools.org">SecTools.Org</a>.
+After <a href="/news/20060621.html">hovering for years in the second spot</a>
+Wireshark is finally number one!
+          </p>
+          <p>
+Thanks to all of the users and developers for making this happen!
+          </p>
+-->
+          <p><a class="more" href="/news/" title="More News..."><b>More News &raquo;</b></a></p>
+        </div>
+      </div>
+      <div class="break"></div>
+      <div class="module latestRelease">
+        <div class="heading"><span>Latest Release</span><a class="rss" href="http://www.wireshark.org/lists/wireshark-announce.rss" title="RSS..."><span>RSS</span></a></div>
+        <div class="content">
+          <h3 class="title">
+            <a href="download.html">Stable: Wireshark 1.8.3</a>
+          </h3>
+          <p class="postinfo">
+            <a href="/news/20121002.html">October 2, 2012
+</a>
+          </p>
+          <p>
+Wireshark 1.8.3 has been released. Installers for
+Windows, Mac OS X 10.5.5 and above (Intel and PPC), and source code is
+now available.
+          </p>
+          <h3 class="title">
+            <a href="/download.html#oldstable_release">Old Stable: Wireshark 1.6.11</a>
+          </h3>
+          <p class="postinfo">
+            <a href="/news/20121002.html">October 2, 2012
+</a>
+          </p>
+          <h3 class="title">
+            <a href="/download.html#development_release">Development: Wireshark 1.8.0rc2</a>
+          </h3>
+          <p class="postinfo">
+            <a href="/news/20120618.html">June 18, 2012
+</a>
+          </p>
+          <p><a class="more" href="/download.html" title="Download Page..."><b>Download Page &raquo;</b></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col second">
+      <div class="module wiresharkBlog">
+        <div class="heading"><span>Wireshark Blog</span><a class="rss" href="https://blog.wireshark.org/feed/" title="RSS..."><span>RSS</span></a></div>
+        <div class="content">
+          <div class="record">
+            <h3 class="title"><a href="https://blog.wireshark.org/2012/06/sharkfest-12-recap/" title="Sharkfest ...12 Recap"><img src="http://ws.cf.wireshark.net/image/announcement.png" width="32" height="32" alt="">Sharkfest ...12 Recap</a></h3>
+            <p class="postinfo">Jun 29 &#124; By Gerald Combs</p>
+          </div>
+          <div class="record">
+            <h3 class="title"><a href="https://blog.wireshark.org/2012/03/wireshark-and-pcap-ng/" title="Wireshark and Pcap-ng"><img src="http://ws.cf.wireshark.net/image/announcement.png" width="32" height="32" alt="">Wireshark and Pcap-ng</a></h3>
+            <p class="postinfo">Mar 6 &#124; By Gerald Combs</p>
+          </div>
+          <div class="record last">
+            <h3 class="title"><a href="https://blog.wireshark.org/2011/12/gratuitous-used-car-analogy/" title="Used Cars and Stub Installers"><img src="http://ws.cf.wireshark.net/image/announcement.png" width="32" height="32" alt="">Used Cars and Stub Installers</a></h3>
+            <p class="postinfo">Dec 6 &#124; By Gerald Combs</p>
+          </div>
+          <p><a class="more" href="https://blog.wireshark.org" title="Sniff free or die&#8230;"><b>Sniff free or die Blog &raquo;</b></a></p>
+        </div>
+      </div>
+      <div class="break"></div>
+      <div class="module videos">
+        <div class="heading"><span>Videos</span></div>
+        <div class="content">
+          <a href="http://wiresharkdownloads.riverbed.com/video/wireshark/introduction-to-wireshark/" title="Introduction To Wireshark"><img class="left" src="http://ws.cf.wireshark.net/image/video1.png" alt="video" width="90" height="86"></a>
+          <h3 class="title"><a href="http://wiresharkdownloads.riverbed.com/video/wireshark/introduction-to-wireshark/" title="Introduction To Wireshark">Introduction To Wireshark</a></h3>
+          <p>
+            Learn how to get up and running with Wireshark.
+          </p>
+          <p class="postinfo">Duration 5:51 (min:sec)</p>
+          <div class="clear"></div>
+          <a href="http://wiresharkdownloads.riverbed.com/video/wireshark/custom-shortcuts/" title="Custom Wireshark Shortcuts"><img class="left" src="http://ws.cf.wireshark.net/image/video2.png" alt="video" width="90" height="85"></a>
+          <h3 class="title"><a href="http://wiresharkdownloads.riverbed.com/video/wireshark/custom-shortcuts/" title="Custom Wireshark Shortcuts">Custom Wireshark Shortcuts</a></h3>
+          <p>
+            Start capturing quickly with a custom shortcut.
+          </p>
+          <p class="postinfo">Duration 2:26 (min:sec)</p>
+          <div class="clear"></div>
+          <p><a class="more" href="/docs/" title="View All Wireshark Videos..."><b>View All Wireshark Videos &raquo;</b></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col last">
+<!--Beginning of the Enhancements Column -->
+        <div class="module enhancements">
+        <div class="heading"><span>Enhance Wireshark</span></div>
+        <div class="content">
+        <div class="record">
+          <h3 class="title" style="margin-bottom: 4px;"><a href="http://www.riverbed.com/us/products/cascade/cascade_shark_overview.php" title="Riverbed products">BUILD YOUR OWN SHARK</a></h3>
+          <p>New! Virtual Cascade.. Shark</p>
+          <ul class="featurelist">
+            <li class="featurelist">Ensure packet data is always available whenever problems occur</li>
+            <li class="featurelist">Speed problem analysis and resolution</li>
+            <li class="featurelist">Monitor physical and virtualized environments</li>
+            <li class="featurelist">Fully integrated with Wireshark</li>
+          </ul>
+          <h3 class="title" style="margin-top: 4px;"><a href="http://www.riverbed.com/us/contact/virtual-cascade-shark-30-day-trial.php?CID=70140000000U3Ku&LSD=Q212_Virtual_Cascade_Shark_Trial_wiresharkor
+10b8
+g_web">Try it FREE for 30 days!</a></h3>
+          <p><a class="button learn" href="http://www.riverbed.com/us/products/cascade/cascade_shark_overview.php"><b>Learn More &raquo;</b></a></p>
+        </div>
+        <div class="record">
+          <h3 class="title" style="margin-bottom: 5px;"><a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/cascade_pilot_personal_edition.php" title="Riverbed Cascade Pilot Personal Edition product page">Cascade&reg; Pilot Personal Edition:<br>
+            Enhance Wireshark</a></h3>
+          <ul class="featurelist">
+            <a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/cascade_pilot_personal_edition.php"><img class="right" style="margin-left: 8px; border: 1px solid #ccc;" src="http://ws.cf.wireshark.net/image/CACE_PILOT_screens.gif" alt="Cascade Pilot Personal Edition graphs" width="80" height="72"></a>
+            <li class="featurelist">Graphical network data analyzer with on-board Wireshark drill-down</li>
+            <li class="featurelist">Fast, easy multi-GB trace file processing</li>
+            <li class="featurelist">Professional reports</li>
+            <li class="featurelist">200 + preconfigured Views for ready access to Web, VoIP, etc. metrics</li>
+            <li class="featurelist">Advanced triggers and alerts</li>
+          </ul>
+          <p><a class="button demo" href="http://www.riverbed.com/us/contact/cascade-pilot-pe-10-day-trial.php"><b>Get a Fully Functional 10-Day Trial Version</b></a></p>
+        </div>
+        <div class="record">
+          <h3 class="title" style="margin-bottom: 4px;"><a href="http://www.riverbed.com/us/products/" title="Riverbed products">Enhanced Network Analysis Solutions</a></h3>
+        </div>
+        <div class="record">
+          <h3 class="title" style="margin-bottom: 5px;"><a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/airpcap.php" title="Riverbed Cascade AirPcap product page">AirPcap</a><a href="http://www.riverbed.com/us/products/cascade/cascade_pilot.php" title="Riverbed Cascade Pilot product page">&reg;</a><a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/airpcap.php" title="Riverbed Cascade AirPcap product page">: 802.11 Wireless Packet Capture Device</a></h3>
+          <a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/airpcap.php"><img class="right" src="http://ws.cf.wireshark.net/image/AirPcap_device.png" alt="Riverbed AirPcap" height="41" width="100" style="margin: 12px 0 0 10px;"></a>
+          <ul class="featurelist">
+            <li class="featurelist">View management, control and data frames</li>
+            <li class="featurelist">Plug &amp; play a/b/g/n</li>
+            <li class="featurelist">Multi-channel aggregation</li>
+          </ul>
+          <p><a class="button learn" href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/airpcap.php"><b>Learn More &raquo;</b></a></p>
+        </div>
+      </div>
+    </div>
+    <!--End of the Enhancements column. Go dry your eyes now. -->
+    </div>
+  <div class="end"></div>
+  </div>
+  <div id="footer">
+    <p>
+      Wireshark and the "fin" logo are registered trademarks of the Wireshark Foundation
+    </p>
+  </div>
+<!-- MAIN BODY ENDS -->
+<script src="/js/shareNice.js" type="text/javascript"></script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-605389-2']);
+_gaq.push(['_trackPageview']);
+
+jQuery(window).load(function() {
+  var ga_src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  $.ajax({ cache: true, dataType: "script", url: ga_src });
+});
+</script>
+<!-- / Google Analytics -->
+
+<div id="v46img"></div>
+<script type="text/javascript">
+
+jQuery(window).load(function(){
+  $('ul.sf-menu').superfish({ delay: 500 });
+});
+
+jQuery(window).load(function(){
+  $.ajax({ cache: true, dataType: "script",
+    url: document.location.protocol + '//www.google.com/cse/brand?form=cse-search-box&amp;lang=en'
+  });
+});
+
+if (document.location.protocol == 'http:') {
+  jQuery(window).load(function(){
+    $.ajax({ cache: true, dataType: "script", url: "/js/v46status.js" });
+  });
+}
+
+</script>
+</body>
+</html>
+
+0
+
+GET /js/shareNice.js HTTP/1.1
+Host: www.wireshark.org
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/20100101 Firefox/16.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://www.wireshark.org/
+Cookie: __rb_webperf=29e289f6; ln_sess=1173657851765
+
+HTTP/1.1 200 OK
+Date: Sat, 20 Oct 2012 23:37:20 GMT
+Server: Apache/2
+Last-Modified: Tue, 02 Oct 2012 19:32:13 GMT
+ETag: "240f24-14e4-4cb189440904a"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+X-Slogan: Sniffing the glue that holds the Internet together.
+Content-Length: 1793
+Keep-Alive: timeout=5, max=61
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+...........XQo.6.~....4...N....(A..k.l(..{(...h..L
+......wGJ2-Kn;..m.......c.<S....._<b.I1.I.J....L^I..../-'.y1.."..}.x..v.x.x...d&.M.........H
+.....5.DB..dN#6.r9..jg..u6...........([d...p.pa.X.OA...k.5.i.t........C).].YZ..D.$e..s0...O...q....5..#...j.h]@%o.....j....k..4.Of......+.b.b.:.\.....y.....<..`'..V...bq.u+.nk......:+...y..Z.6*....,.....\...V.......!.M..y.j........tcK..$.LA.X...BD.K.;..y...+..c..+&.(a.6e......;....1\+.eL..".@..<.R.	.....^.y.+&..."M[.yX.u.}....;..kM.......".....U......Bo.D.Z;|...~..(G.....	.4....?.~..=..n...2?...}.@.p.j6...2Z.6.
+]..l.n
+\......^ZuS..O..2..m.@p..M.b.b=)..%.:2...7.....}..GP......Y.).....s....C,_K.A..EK.Ut..c.^pp	...c[....xZ.}r..3p/i.w*...#q.0.~C[..vW..<r.=..S)s.z.F.q1.Tk..T...V......z....E.....^...
+......C....T}..q.Q...._.......LI....J."E#\.....t...<.{.\9./....u9u\....1.=D. 9$RQ......c(..T...Z.G....;;.~uHBr......4.O.R.....''{vB....k0wo...j.Q....._......6..A......s....g....\$p.ZV..id.....x`.
+Zo2&.^.B...d.....5=<.g...`....\.$fsZ..4w..d..3#h.ihV.4
+.0.Q.......u........a.2..W..[(6.	.x.6...4.h.4Z&J.".x..A..F.A....=;...]c:8.....W.(.(...\1.[...=.....tr.../..>......3.'.P..Q.`....x....E.i...1..."...	 ...6.lg...* W.czu	A..V~ ..R.....+*2.s.Ag.L!q;......xg...0.^..........1./..X.5...z1....g/..`<Y..w....)2i..A..V;(.,8...r>6.a.*.KuM.gK.........	!...hC..@......r.-[o...M.5.....-..s..8M.....6.s..V...r.s=4.6....w..Glu.......O.n/<t.L.	%..X....3.H.....b.....5......`.]Z......5.|......=<...M.Ff.F(Y.i.:...v.....S.B.<..
+......f..0...5Xu.........I
+O.>.{.8t.."...0...Y)x.j..q.A`|.x....S.........3.b.=..x4.&..Goj^Te.......1.l..+......".".+%..S..T...U.........}?.5....L.g.m......R.........1.h5..<.(.u4..y:l=........l..$..YE.._....#..o. .L.\...4..)V...|...zz.c..Q.mQ..m.n..-..>.....u.......3../.R.&o.-n...t..'R@.....+..X.C'.Y.c#......~.:L...N....6...C...b..<....GET /download.html HTTP/1.1
+Host: www.wireshark.org
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/20100101 Firefox/16.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://www.wireshark.org/
+Cookie: __rb_webperf=fb1311c1; ln_sess=1173657851765; __utma=87653150.367987536.1350776242.1350776242.1350776242.1; __utmb=87653150.1.10.1350776242; __utmc=87653150; __utmz=87653150.1350776242.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ln_c=1350776243518%2C/%2C1
+
+HTTP/1.1 200 OK
+Server: Apache/2
+Vary: Accept-Encoding
+X-Slogan: Sniffing the glue that holds the Internet together.
+Cache-Control: no-cache
+Content-Type: text/html
+Date: Sat, 20 Oct 2012 23:37:23 GMT
+Keep-Alive: timeout=5, max=55
+Transfer-Encoding: chunked
+ETag: "24001c-5797-4cb1894321913"
+Connection: Keep-Alive
+Set-Cookie: __rb_webperf=30929a11; domain=wireshark.org; path=/
+Last-Modified: Tue, 02 Oct 2012 19:32:12 GMT
+
+142d
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head><script> var EPISODES = EPISODES || {};EPISODES.q = [];EPISODES.marks = {};EPISODES.newcookieVal = "30929a11"; EPISODES.oldcookieVal = "fb1311c1"; EPISODES.beaconUrl = "http://www.wireshark.org:61899/beacon/1x1.gif"; EPISODES.mark = function(mn, mt) { EPISODES.marks[mn] = mt || new Date().getTime()};EPISODES.measure = function(en, st, en) { EPISODES.q.push( ["measure", en, st, en || new Date().getTime()] ); };EPISODES.mark("firstbyte");EPISODES.domContentLoaded = function(e) {   EPISODES.mark("domcontentloaded");};if ( "undefined" != typeof(window.attachEvent) ) {     window.attachEvent("onDOMContentLoaded", EPISODES.domContentLoaded);   }else if ( window.addEventListener ){     window.addEventListener("DOMContentLoaded", EPISODES.domContentLoaded, false);   }(function() {                 var epjs = document.createElement("script"); epjs.type = "text/javascript"; epjs.async = true;                 epjs.src = "http://dmru24w46caus.cloudfront.net/episodes.v0.32.min.js";    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(epjs, s);})();</script>
+  <title>Wireshark &middot; Download</title>
+  <link rel="dns-prefetch" href="//ws.cf.wireshark.net">
+  <link rel="dns-prefetch" href="//www.google.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//ipv4.wireshark.org">
+  <link rel="dns-prefetch" href="//ipv6.wireshark.org">
+  <link type="text/css" rel="Stylesheet" href="/css/ws-2011-10.css" title="screen" media="screen">
+  <style type="text/css" media="screen">
+    @import url("http://ws.cf.wireshark.net/css/jqui/jqui-1.7.2.custom.css");
+  </style>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="/webtuna.js"></script>
+</head>
+<body>
+<!-- MAIN BODY -->
+<div id="wrapper">
+  <div id="header">
+    <div class="row one">
+      <div
+        class="v46status"
+        onclick="location.href='http://www.wireshark.org/tools/v46status.html';"
+        style="cursor: pointer;"></div>
+      <h1 id="logotype"><a href="/" title="Wireshark Home&#x2026;">Wireshark</a></h1>
+      <ul class="navigation horizontal secondary">
+        <li id="navRiverbed"><a href="http://www.riverbed.com/" title="Riverbed Technology Web Site"><span class="hidden">Riverbed Technology</span></a></li>
+        <li id="navWinPcap"><a href="http://www.winpcap.org/" title="WinPcap Web Site"><span class="hidden">WinPcap</span></a></li>
+      </ul>
+<div id="slogan">the world's foremost network protocol analyzer</div>
+    </div>
+<script type="text/javascript" src="/js/jq1.3.2+sf+hi.js"></script>
+    <div class="row two">
+      <!-- NAV -->
+      <ul id="nav" class="navigation horizontal primary sf-menu sf-js-enabled sf-shadow">
+        <li class="item navWireshark"><a class="firstLevel" name="wireshark_menu" href="/"><span>Wireshark</span></a>
+          <ul class="dropdown">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/download.html">Download</a></li>
+            <li><a href="https://blog.wireshark.org/">Blog</a></li>
+          </ul>
+        </li>
+        <li class="item navLearn"><a class="firstLevel" name="help_menu" href="/docs/"><span>Get Help</span></a>
+          <ul>
+            <li><a href="http://ask.wireshark.org/">Ask a Question</a></li>
+            <li><a href="/faq.html">FAQs</a></li>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/lists/">Mailing Lists</a></li>
+            <li><a href="/tools/">Online Tools</a></li>
+            <li><a href="http://wiki.wireshark.org/">Wiki</a></li>
+            <li><a href="https://bugs.wireshark.org/">Bug Tracker</a></li>
+          </ul>
+        </li>
+        <li class="item last navDevelop"><a class="firstLevel" name="develop_menu" href="/develop.html"><span>Develop</span></a>
+          <ul>
+            <li><a href="/develop.html">Get Involved</a></li>
+            <li><a href="/docs/wsdg_html_chunked">Developer's Guide</a></li>
+            <li><a href="http://anonsvn.wireshark.org/viewvc/viewvc.cgi">Browse the Code</a></li>
+            <li><a href="/download/automated">Latest Builds</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- NAV ENDS -->
+      <div id="searchbox">
+<!-- Search box -->
+<div id="searchBar">
+  <form action="http://www.google.com/cse" id="cse-search-box">
+    <div>
+      <input type="hidden" name="cx" value="partner-pub-8797272874272241:rr0bun-xdwz">
+      <input type="hidden" name="ie" value="UTF-8">
+      <input type="text" class="textbox" name="q" size="25">
+      <input type="submit" class="button submit likeimage" name="sa" value="Search">
+    </div>
+  </form>
+</div>
+<!-- Search box ends -->
+      </div>
+      <div id="shareNice" icon-size="16"></div>
+    </div>
+    <!-- NAV ENDS -->
+  </div>
+      <div id="main">
+        <div class="cols mixed2and1">
+          <div class="col ratio2of3">
+<div class="module download">
+  <div class="heading"><span>Download Wireshark</span></div>
+  <div class="content">
+
+2000
+  <h1>Get Wireshark</h1>
+  <p>
+  The current stable release of Wireshark is 1.8.3.
+  It supersedes all previous releases, including
+  <a href="http://www.ethereal.com/appnotes/enpa-sa-00024.html">all releases of Ethereal</a>.
+  You can also download the latest development release (1.8.0rc2)
+  and documentation.
+  </p>
+  <div id="dl_box">
+<script type="text/javascript">
+document.write("<p><span class=\"loading\">Loading...</span></p>");
+</script>
+<noscript>
+<ul>
+  <li>Stable Release (1.8.3)
+  <table summary="">
+    <tbody>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win32/Wireshark-win32-1.8.3.exe">Windows Installer (32-bit)</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win64/Wireshark-win64-1.8.3.exe">Windows Installer (64-bit)</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win32/Wireshark-1.8.3.u3p">Windows U3</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win32/WiresharkPortable-1.8.3.paf.exe">Windows PortableApps</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/osx/Wireshark 1.8.3 Intel 64.dmg">OS X 10.6 and later Intel 64-bit .dmg</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/osx/Wireshark 1.8.3 Intel 32.dmg">OS X 10.5 and later Intel 32-bit .dmg</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/osx/Wireshark 1.8.3 PPC 32.dmg">OS X 10.5 and later PPC 32-bit .dmg</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/src/wireshark-1.8.3.tar.bz2">Source Code</a></td>
+    </tr>
+  </tbody></table>
+  </li>
+  <li>Old Stable Release (1.6.11)
+  <table summary="">
+    <tbody>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win32/wireshark-win32-1.6.11.exe">Windows Installer (32-bit)</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win64/wireshark-win64-1.6.11.exe">Windows Installer (64-bit)</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win32/wireshark-1.6.11.u3p">Windows U3</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win32/WiresharkPortable-1.6.11.paf.exe">Windows PortableApps</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/osx/Wireshark 1.6.11 Intel 64.dmg">OS X 10.6 and later Intel 64-bit .dmg</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/osx/Wireshark 1.6.11 Intel 32.dmg">OS X 10.5 and later Intel 32-bit .dmg</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/osx/Wireshark 1.6.11 PPC 32.dmg">OS X 10.5 and later PPC 32-bit .dmg</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/src/wireshark-1.6.11.tar.bz2">Source Code</a></td>
+    </tr>
+  </tbody></table>
+  </li>
+  <li>Development Release (1.8.0rc2)
+    <table summary="">
+    <tbody>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win64/Wireshark-win64-1.8.0rc2.exe">Windows Installer (64-bit)</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win32/Wireshark-win32-1.8.0rc2.exe">Windows Installer</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win32/Wireshark-1.8.0rc2.u3p">Windows U3</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/win32/WiresharkPortable-1.8.0rc2.paf.exe">Windows PortableApps</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/osx/Wireshark 1.8.0rc2 Intel 64.dmg">OS X 10.6 and later Intel 64-bit .dmg</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/osx/Wireshark 1.8.0rc2 Intel 32.dmg">OS X 10.5 and later Intel 32-bit .dmg</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/osx/Wireshark 1.8.0rc2 PPC 32.dmg">OS X 10.5 and later PPC 32-bit .dmg</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/src/wireshark-1.8.0rc2.tar.bz2">Source Code</a></td>
+    </tr>
+  </tbody></table>
+  </li>
+  <li>Documentation
+  <table summary="">
+    <tbody><tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/docs/wsug_html_chunked/">Online (Multiple Pages)</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/docs/wsug_html/">Online (Single Page)</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/docs/user-guide-us.pdf">U.S. PDF</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/docs/user-guide-a4.pdf">A4 PDF</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/download/docs/user-guide.chm">Windows HTML Help</a></td>
+    </tr>
+    <tr>
+      <td class="dl_arrow"> </td>
+      <td><a class="dl_link" href="/docs/">All Documentation</a></td>
+    </tr>
+  </tbody></table>
+  </li>
+</ul>
+</noscript>
+  </div>
+  <p>
+  Having problems? <a href="#spelunking">Explore our download area</a>
+  or look in our <a href="#thirdparty">third party package list</a> below.
+  </p>
+  <h1>Installation Notes</h1>
+  <p>
+  For a complete list of system requirements and supported platforms,
+  please consult <a href="/docs/wsug_html_chunked/ChIntroPlatforms.html">the User's Guide</a>.
+  </p>
+  <p>
+  Information about each release can be found in <a href="/docs/relnotes/">the release notes</a>.
+  </p>
+  <p>
+  Each Windows package comes with the latest stable release of
+  <a href="http://www.winpcap.org/">WinPcap</a>, which is required for live
+  packet capture. If needed you can install the latest development release
+  from the
+  <a href="http://www.winpcap.org/install/default.htm">WinPcap download page</a>.
+  </p>
+  <h1>Live on the Bleeding Edge</h1>
+  <p>
+  You can download source code packages and Windows installers which are
+  automatically created each time code is checked into the <a href="http://anonsvn.wireshark.org/">source code repository</a>. These
+  packages are available in the <a href="/download/automated/">automated
+  build section</a> of our download area.
+  </p>
+  <a name="spelunking"></a>
+  <h1>Go Spelunking</h1>
+  <p>
+  You can explore the download areas of the main site and mirrors below.
+  Past releases can be found by browsing the <i>all-versions</i> directories
+  under each platform directory.
+  </p>
+  <div id="dl_mirrors">
+  <ul class="item_list">
+    <li><a href="http://wiresharkdownloads.riverbed.com/wireshark">Riverbed Technology (http, us)</a></li>
+    <li><a href="ftp://mirror.kn.vutbr.cz/pub/wireshark/">Brno University of Technology (ftp, cz)</a></li>
+    <li><a href="http://wireshark.kn.vutbr.cz/download/">Brno University of Technology (http, cz)</a></li>
+    <li><a href="http://wireshark.cbn.net.id/download">CBN (http, id)</a></li>
+    <li><a href="http://wireshark.cs.pu.edu.tw/download">Providence University (http, tw)</a></li>
+    <li><a href="http://prdownloads.sourceforge.net/wireshark">SourceForge.net (http, many)</a></li>
+    <li><a href="ftp://ftp.uni-kl.de/pub/wireshark">University of Kaiserslautern (ftp, de)</a></li>
+    <li><a href="http://ftp.uni-kl.de/pub/wireshark">University of Kaiserslautern (http, de)</a></li>
+    <li><a href="http://nervion.us.es/wsdownload/">University of Seville (http, es)</a></li>
+    <li><a href="http://ftp.yz.yamagata-u.ac.jp/pub/network/security/wireshark/">Yamagata University, Japan (http, jp)</a></li>
+    <li><a href="f
+27a9
+tp://ftp.yz.yamagata-u.ac.jp/pub/network/security/wireshark/">Yamagata University, Japan (ftp, jp)</a></li>
+    <li><a href="rsync://ftp.yz.yamagata-u.ac.jp/pub/network/security/wireshark/">Yamagata University, Japan (rsync, jp)</a></li>
+    <li><a href="http://www.wireshark.org/download">Wireshark.org (http, us)</a></li>
+    <li><a href="http://wireshark.zing.org/download">Zing.org (http, us)</a></li>
+  </ul>
+  </div>
+  <h1>Stay Current</h1>
+  <p>
+  You can stay informed about new Wireshark releases by subscribing to
+  the <a href="/lists">wireshark-announce mailing list</a>. We
+  also provide a <a href="/wireshark-pad.xml">PAD file</a> to
+  make automated checking easier.
+  </p>
+  <h1>Verify Downloads</h1>
+  <p>
+  File hashes for the 1.8.3 release can be found in
+  the <a href="/download/SIGNATURES-1.8.3.txt">signatures file</a>.
+  It is signed with <a href="/download/gerald_at_wireshark_dot_org.gpg">key id 0x21F2949A</a>.
+  </p>
+  <h1>Stay Legal</h1>
+  <p>
+  Wireshark is subject to
+  <a href="export.html">U.S. export regulations</a>. Take heed.
+  Consult a lawyer if you have any questions.
+  </p>
+  </div><div class="end"></div>
+  </div>
+  </div>
+  <div class="col ratio1of3 last">
+<!--Beginning of the Enhancements Column -->
+        <div class="module enhancements">
+        <div class="heading"><span>Enhance Wireshark</span></div>
+        <div class="content">
+        <div class="record">
+          <h3 class="title" style="margin-bottom: 4px;"><a href="http://www.riverbed.com/us/products/cascade/cascade_shark_overview.php" title="Riverbed products">BUILD YOUR OWN SHARK</a></h3>
+          <p>New! Virtual Cascade.. Shark</p>
+          <ul class="featurelist">
+            <li class="featurelist">Ensure packet data is always available whenever problems occur</li>
+            <li class="featurelist">Speed problem analysis and resolution</li>
+            <li class="featurelist">Monitor physical and virtualized environments</li>
+            <li class="featurelist">Fully integrated with Wireshark</li>
+          </ul>
+          <h3 class="title" style="margin-top: 4px;"><a href="http://www.riverbed.com/us/contact/virtual-cascade-shark-30-day-trial.php?CID=70140000000U3Ku&LSD=Q212_Virtual_Cascade_Shark_Trial_wiresharkorg_web">Try it FREE for 30 days!</a></h3>
+          <p><a class="button learn" href="http://www.riverbed.com/us/products/cascade/cascade_shark_overview.php"><b>Learn More &raquo;</b></a></p>
+        </div>
+        <div class="record">
+          <h3 class="title" style="margin-bottom: 5px;"><a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/cascade_pilot_personal_edition.php" title="Riverbed Cascade Pilot Personal Edition product page">Cascade&reg; Pilot Personal Edition:<br>
+            Enhance Wireshark</a></h3>
+          <ul class="featurelist">
+            <a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/cascade_pilot_personal_edition.php"><img class="right" style="margin-left: 8px; border: 1px solid #ccc;" src="http://ws.cf.wireshark.net/image/CACE_PILOT_screens.gif" alt="Cascade Pilot Personal Edition graphs" width="80" height="72"></a>
+            <li class="featurelist">Graphical network data analyzer with on-board Wireshark drill-down</li>
+            <li class="featurelist">Fast, easy multi-GB trace file processing</li>
+            <li class="featurelist">Professional reports</li>
+            <li class="featurelist">200 + preconfigured Views for ready access to Web, VoIP, etc. metrics</li>
+            <li class="featurelist">Advanced triggers and alerts</li>
+          </ul>
+          <p><a class="button demo" href="http://www.riverbed.com/us/contact/cascade-pilot-pe-10-day-trial.php"><b>Get a Fully Functional 10-Day Trial Version</b></a></p>
+        </div>
+        <div class="record">
+          <h3 class="title" style="margin-bottom: 4px;"><a href="http://www.riverbed.com/us/products/" title="Riverbed products">Enhanced Network Analysis Solutions</a></h3>
+        </div>
+        <div class="record">
+          <h3 class="title" style="margin-bottom: 5px;"><a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/airpcap.php" title="Riverbed Cascade AirPcap product page">AirPcap</a><a href="http://www.riverbed.com/us/products/cascade/cascade_pilot.php" title="Riverbed Cascade Pilot product page">&reg;</a><a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/airpcap.php" title="Riverbed Cascade AirPcap product page">: 802.11 Wireless Packet Capture Device</a></h3>
+          <a href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/airpcap.php"><img class="right" src="http://ws.cf.wireshark.net/image/AirPcap_device.png" alt="Riverbed AirPcap" height="41" width="100" style="margin: 12px 0 0 10px;"></a>
+          <ul class="featurelist">
+            <li class="featurelist">View management, control and data frames</li>
+            <li class="featurelist">Plug &amp; play a/b/g/n</li>
+            <li class="featurelist">Multi-channel aggregation</li>
+          </ul>
+          <p><a class="button learn" href="http://www.riverbed.com/us/products/cascade/wireshark_enhancements/airpcap.php"><b>Learn More &raquo;</b></a></p>
+        </div>
+      </div>
+    </div>
+    <!--End of the Enhancements column. Go dry your eyes now. -->
+<div class="break"></div>
+  <div class="module thirdparty">
+  <div class="heading"><span>Third-Party Packages</span></div>
+  <div class="content">
+  <a name="thirdparty"></a>
+  <h1>Third-Party Packages</h1>
+  <p>
+  Wireshark packages are available for most platforms, including
+  the ones listed below.
+  </p>
+  <table class="shaded" summary="">
+  <caption>
+    <b>Standard package</b>: Available via that distribution's
+    packaging system.
+  </caption>
+  <tbody>
+  <tr><th>Vendor / Platform</th><th>Sources</th></tr>
+  <tr><td>Apple / Mac OS X</td>
+  <td>
+    <!--
+    Site appears to be down
+    <a href="http://www.finkconsulting.com/page7.php">Andreas Fink</a><br>
+    -->
+    <a href="http://macports.org/">MacPorts</a><br>
+    <a href="http://pdb.finkproject.org/pdb/package.php/wireshark">Fink</a>
+      <!-- (no relation to Andreas) -->
+  </td></tr>
+  <tr>
+    <td>Canonical / Ubuntu</td>
+    <td>
+      <a href="http://packages.ubuntu.com/search?suite=all&amp;searchon=names&amp;keywords=wireshark">Standard package</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Debian / Debian GNU/Linux</td>
+    <td>
+      <a href="http://packages.debian.org/search?keywords=wireshark&amp;searchon=names&amp;suite=all&amp;section=all">Standard package</a>
+    </td>
+  </tr>
+  <tr>
+    <td>The FreeBSD Project / FreeBSD</td>
+    <td>
+      <a href="http://www.freshports.org/net/wireshark/">Standard package</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Gentoo Foundation / Gentoo Linux</td>
+    <td>
+      <a href="http://packages.gentoo.org/package/net-analyzer/wireshark">Standard package</a>
+    </td>
+  </tr>
+  <tr><td>HP / HP-UX</td>
+  <td>
+    <a href="http://hpux.connect.org.uk/">Porting And Archive Centre for HP-UX</a>
+  </td></tr>
+  <tr><td>Mandriva / Mandriva Linux</td> <td>Standard package</td></tr>
+  <tr>
+    <td>NetBSD Foundation / NetBSD</td>
+    <td>
+      <a href="ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/net/wireshark/">Standard package</a>
+    </td>
+  </tr>
+  <tr><td>Novell / openSUSE, SUSE Linux</td> <td>Standard package</td></tr>
+  <tr>
+    <td>OpenPKG / OpenPKG Project</td>
+    <td>
+      <a href="http://www.openpkg.org/product/packages/?package=wireshark">Standard package</a>
+    </td>
+  </tr>
+  <tr>
+    <td>PC-BSD Software &#183; iXsystems / PC-BSD</td>
+    <td>
+      <a href="http://pbidir.com/bt/pbi/67/wireshark">Push Button Installer</a>
+    </td>
+  </tr>
+  <tr><td>PCLinuxOS / PCLinuxOS</td> <td>Standard package</td></tr>
+  <tr>
+    <td>Red Hat / Fedora</td>
+    <td>
+      <a href="https://admin.fedoraproject.org/pkgdb/acls/name/wireshark">Standard package</a>
+    </td>
+  </tr>
+  <tr><td>Red Hat / Red Hat Enterprise Linux</td> <td>Standard package</td></tr>
+  <tr><td>rPath / rPath Linux</td> <td>Standard package</td></tr>
+  <tr><td>Slackware Linux / Slackware</td>
+  <td>
+    <a href="http://slackbuilds.org/">SlackBuilds.org</a>
+  </td></tr>
+  <tr><td>Oracle / Solaris</td>
+  <td>
+    <a href="http://www.sunfreeware.com/">Sunfreeware.com</a><br>
+    <a href="http://www.opencsw.org/">CSW</a><br>
+    <a href="http://www.blastwave.org/">Blastwave.org</a>
+  </td></tr>
+  <tr><td>* / *</td>
+  <td>
+    <a href="http://www.thewrittenword.com/">The Written Word</a>
+  </td></tr>
+  </tbody>
+  </table>
+  </div>
+  <div class="break"></div>
+  </div>
+</div>
+<script type="text/javascript" src="/mirrors.js"></script>
+<script type="text/javascript" src="/js/downloads-1.8.3-1.6.11-1.8.0rc2.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  fill_dl_box();
+  fill_dl_mirrors();
+});
+</script>
+
+  </div>
+  <div id="footer">
+    <p>
+      Wireshark and the "fin" logo are registered trademarks of the Wireshark Foundation
+    </p>
+  </div>
+<!-- MAIN BODY ENDS -->
+<script src="/js/shareNice.js" type="text/javascript"></script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-605389-2']);
+_gaq.push(['_trackPageview']);
+
+jQuery(window).load(function() {
+  var ga_src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  $.ajax({ cache: true, dataType: "script", url: ga_src });
+});
+</script>
+<!-- / Google Analytics -->
+
+<div id="v46img"></div>
+<script type="text/javascript">
+
+jQuery(window).load(function(){
+  $('ul.sf-menu').superfish({ delay: 500 });
+});
+
+jQuery(window).load(function(){
+  $.ajax({ cache: true, dataType: "script",
+    url: document.location.protocol + '//www.google.com/cse/brand?form=cse-search-box&amp;lang=en'
+  });
+});
+
+if (document.location.protocol == 'http:') {
+  jQuery(window).load(function(){
+    $.ajax({ cache: true, dataType: "script", url: "/js/v46status.js" });
+  });
+}
+
+</script>
+</body>
+</html>
+
+0
+
+GET /mirrors.js HTTP/1.1
+Host: www.wireshark.org
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/20100101 Firefox/16.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://www.wireshark.org/download.html
+Cookie: __rb_webperf=30929a11; ln_sess=1173657851765; __utma=87653150.367987536.1350776242.1350776242.1350776242.1; __utmb=87653150.1.10.1350776242; __utmc=87653150; __utmz=87653150.1350776242.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ln_c=1350776243518%2C/%2C1
+
+HTTP/1.1 200 OK
+Date: Sat, 20 Oct 2012 23:37:23 GMT
+Server: Apache/2
+Last-Modified: Sat, 20 Oct 2012 17:10:06 GMT
+ETag: "240f6d-35c-4cc80b11fa225"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+X-Slogan: If it can shock or blind you it's layer 1.
+Content-Length: 342
+Keep-Alive: timeout=5, max=54
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+............1o.0.....	$.....C..]....h.Kbp..l.J+.{
+%.....%.w...{.'...N.m.4..H...w.y..*{!....@..e.d....v..1...,..b..e..A...........\....2....eU.l..............F.....o..j.N. L3.'.."...'.O.*..n`5\....F.=..C.UR.I,3%{......!i6)...Gby...........on....rN..
+Zc'.......H]L.x.h.`.'.?.?........ ....v.....W..+!..W....?5.=p...hQ\{0..-
+OQf.,.j......&..\...GET /image/dlarrow.png HTTP/1.1
+Host: www.wireshark.org
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/20100101 Firefox/16.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Referer: http://www.wireshark.org/download.html
+Cookie: __rb_webperf=30929a11; ln_sess=1173657851765; __utma=87653150.367987536.1350776242.1350776242.1350776242.1; __utmb=87653150.1.10.1350776242; __utmc=87653150; __utmz=87653150.1350776242.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ln_c=1350776243518%2C/%2C1
+
+HTTP/1.1 200 OK
+Date: Sat, 20 Oct 2012 23:37:23 GMT
+Server: Apache/2
+Last-Modified: Tue, 02 Oct 2012 19:32:13 GMT
+ETag: "241291-5d9-4cb18943edac8"
+Accept-Ranges: bytes
+Content-Length: 1497
+X-Slogan: Sniffing the glue that holds the Internet together.
+Keep-Alive: timeout=5, max=53
+Connection: Keep-Alive
+Content-Type: image/png
+
+.PNG
+.
+...
+IHDR..............W.?....PLTE..?............_.........................................................................s..... .....J..s.............................^..Uy.<v.0b........[.......j........-.....&..)........E..F.....T..._.<.........k..l..}.C..%......z.pc..i.......$..................h.&...{.j...a.4..W.....=...t.i..;.....d.....s........i..>Z........t.
+...c.......e.....3......p..a.......w|....v..7....._~....._..e..m....&{.V..x..J..J.....Oi..|..o..n..oujr.ik....W..N..J..zv.
+q..t....
+v..`....Q..C.....p..#...........(..p..J...f....``xK.....Vl.B..n......{.c.....~..u..T.....[............h.@..5p..t.a^..n..n....z.....`...........H.....I...........k.....\..a..6.................i{.M...w.
+......o.....f....>......n.......g..9...m..............y{x..!...c...........fsZ{.......Gv....7..,..?......k....tRNS................................................................................................................................................................................................................................................................S..%....IDAT..c......9..pp.C .?...q...8..*Gs:?.X...'.....x........O.e.....m.y...(...t*'....|.+.\..(.^^sTU..+....+.U.5.Af.6...=.l^.......4@.......h....?..D...v.........[.E.."<;.33..z..h./i...R.o.=V...f..3....{*....O....c2D..7..J.P.{..di...>g.he..`....J.......6c....=....F...P.4.....w..7*.....e..6\^...:i......2@w........bm..KM..x. P.?s....3..l..%.|R....P...N..F...5b. A..,..R.....R...@..J.
+...........0e..@.......IEND.B`.
